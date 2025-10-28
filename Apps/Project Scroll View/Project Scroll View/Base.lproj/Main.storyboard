@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_Scroll_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1q-VW-Wkb">
+                                <rect key="frame" x="76" y="362" width="241" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="182" translatesAutoresizingMaskIntoConstraints="NO" id="26l-oJ-vDL">
+                                        <rect key="frame" x="0.0" y="-436" width="241" height="1000"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VTx-6z-XYw">
+                                                <rect key="frame" x="0.0" y="0.0" width="241" height="128"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cnw-mc-5tU">
+                                                <rect key="frame" x="0.0" y="310" width="241" height="380"/>
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lfG-5z-18u">
+                                                <rect key="frame" x="0.0" y="872" width="241" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="26l-oJ-vDL" secondAttribute="trailing" id="Zed-HR-qUf"/>
+                                    <constraint firstItem="26l-oJ-vDL" firstAttribute="centerY" secondItem="X1q-VW-Wkb" secondAttribute="centerY" id="g4c-8M-92J"/>
+                                    <constraint firstItem="26l-oJ-vDL" firstAttribute="centerX" secondItem="X1q-VW-Wkb" secondAttribute="centerX" id="h0b-Bm-nai"/>
+                                    <constraint firstAttribute="bottom" secondItem="26l-oJ-vDL" secondAttribute="bottom" constant="-128" id="hKm-WG-ow7"/>
+                                    <constraint firstItem="26l-oJ-vDL" firstAttribute="leading" secondItem="ukZ-aZ-LSz" secondAttribute="leading" id="uPh-rg-HsR"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="mxh-i6-xqx"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ukZ-aZ-LSz"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X1q-VW-Wkb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K6p-EI-9kD"/>
+                            <constraint firstItem="X1q-VW-Wkb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="US2-ws-LrN"/>
+                            <constraint firstItem="X1q-VW-Wkb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WI7-Mi-iqM"/>
+                            <constraint firstItem="X1q-VW-Wkb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="244" id="kPl-Nc-PJt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127.48091603053435" y="110.56338028169014"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
